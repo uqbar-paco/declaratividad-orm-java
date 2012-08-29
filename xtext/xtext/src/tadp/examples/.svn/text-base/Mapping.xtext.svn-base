@@ -1,0 +1,13 @@
+grammar tadp.examples.Mapping with org.eclipse.xtext.common.Terminals
+
+generate mapping "http://www.examples.tadp/Mapping"
+
+Mapping :
+  'entity' name=ID ('table:' table=STRING)? '{'
+    (properties+=Property)*
+  '}';
+ 
+Property :
+  'property' name=ID ('type:' type=Type)? ('column:' column=STRING)?;
+  
+Type : 'String' | 'Date';

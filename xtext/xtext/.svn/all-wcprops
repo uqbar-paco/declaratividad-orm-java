@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/840/edu/tadp/desarrollo/trunk/declaratividad/xtext/xtext
+END
+plugin.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/840/edu/tadp/desarrollo/trunk/declaratividad/xtext/xtext/plugin.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/840/edu/tadp/desarrollo/trunk/declaratividad/xtext/xtext/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/840/edu/tadp/desarrollo/trunk/declaratividad/xtext/xtext/.project
+END
+plugin.xml_gen
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/840/edu/tadp/desarrollo/trunk/declaratividad/xtext/xtext/plugin.xml_gen
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/840/edu/tadp/desarrollo/trunk/declaratividad/xtext/xtext/build.properties
+END
