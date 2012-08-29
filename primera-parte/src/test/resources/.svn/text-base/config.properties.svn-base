@@ -1,5 +1,0 @@
-#HSQLDB
-rca.driverClassName=org.hsqldb.jdbcDriver
-rca.url=jdbc:hsqldb:mem:TESTJDBC
-rca.user=sa
-rca.password=

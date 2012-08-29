@@ -1,4 +1,0 @@
-import tadp::examples::mapping;
-
-sortedGreetings(Model this) :
-	this.greetings.sortBy(g|g.name.toLowerCase());
