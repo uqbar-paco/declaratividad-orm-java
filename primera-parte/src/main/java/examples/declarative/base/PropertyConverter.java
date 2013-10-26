@@ -4,6 +4,8 @@ import java.lang.reflect.Method;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import examples.utils.StringUtils;
 
@@ -26,14 +28,12 @@ public abstract class PropertyConverter {
 	// *************************************************************** //
 
 	public static PropertyConverter getConverterForType(Class<?> type) {
-		if (type.equals(String.class)) {
-			return new StringConverter();
-		}
-		else if (type.equals(Date.class)) {
-			return new DateConverter();
-		}
-		else {
+		Map<Class<?>, PropertyConverter> converters = new HashMap<Class<?>, PropertyConverter>();
+		converters.put(String.class, new StringConverter());
+		converters.put(Date.class, new DateConverter());
+		if(!converters.containsKey(type)) {
 			throw new RuntimeException("Cannot create converter for " + type.getName());
 		}
+		return converters.get(type);
 	}
 }
